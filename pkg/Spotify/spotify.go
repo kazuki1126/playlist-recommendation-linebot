@@ -86,9 +86,6 @@ func GetRandomCategory(playlistCategories []string) string {
 }
 
 func UpdateToken(spotifySecretKey string) error {
-	if spotifySecretKey == "" {
-		return errors.New("Spotify secret key is blank!")
-	}
 	apiURL := "https://accounts.spotify.com/api/token"
 	body := url.Values{}
 	body.Set("grant_type", "client_credentials")
