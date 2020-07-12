@@ -1,0 +1,20 @@
+{
+	"ImportPath": "go-excercises/oyaji-playlist-recommendation-linebot",
+	"GoVersion": "go1.14",
+	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/line/line-bot-sdk-go/linebot",
+			"Comment": "v7.4.0-9-g5b8805e",
+			"Rev": "5b8805e95996ca75de576a38e95edf6797d097da"
+		},
+		{
+			"ImportPath": "github.com/robfig/cron",
+			"Comment": "v3.0.1-3-g6a8421b",
+			"Rev": "6a8421bcff44c2a9889075724070baaebf8dcd72"
+		}
+	]
+}
