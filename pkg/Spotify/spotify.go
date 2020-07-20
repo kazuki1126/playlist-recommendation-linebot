@@ -48,8 +48,10 @@ type parsedPlaylists struct {
 }
 
 func GetPlayLists(musicCategory string) ([]string, error) {
-	url := fmt.Sprintf("https://api.spotify.com/v1/browse/categories/%s/playlists?country=%s&limit=%d",
-		musicCategory, spotifyRequest.Country, spotifyRequest.Limit)
+	r := rand.New(rand.NewSource(time.Now().Unix()))
+	offset := r.Perm(8)[0]
+	url := fmt.Sprintf("https://api.spotify.com/v1/browse/categories/%s/playlists?country=%s&limit=%d&offset=%d",
+		musicCategory, spotifyRequest.Country, spotifyRequest.Limit, offset)
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		return nil, err
