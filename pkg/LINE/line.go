@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 
-	spotify "github.com/kazuki1126/playlist-recommendation-linebot/pkg/Spotify"
+	spotify "github.com/kazuki1126/playlist-recommendation-linebot/pkg/spotify"
 
 	"github.com/line/line-bot-sdk-go/linebot"
 )

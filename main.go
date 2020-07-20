@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	line "github.com/kazuki1126/playlist-recommendation-linebot/pkg/LINE"
-	spotify "github.com/kazuki1126/playlist-recommendation-linebot/pkg/Spotify"
+	line "github.com/kazuki1126/playlist-recommendation-linebot/pkg/line"
+	spotify "github.com/kazuki1126/playlist-recommendation-linebot/pkg/spotify"
 
 	"log"
 	"net/http"
